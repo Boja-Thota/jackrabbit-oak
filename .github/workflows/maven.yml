@@ -24,9 +24,7 @@ jobs:
         with:
           distribution: 'adopt'
           java-version: '11'
-          cache: maven
         
-      
       - name: Build Project
         run: mvn clean install -DskipTests -pl oak-auth-ldap -am
       
