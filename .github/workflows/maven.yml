@@ -25,6 +25,9 @@ jobs:
           distribution: 'adopt'
           java-version: '11'
 
+      - name: Checkout
+        run: git checkout 4e92b7d8703be8a46754710971012af8b2f8a6bb
+        
       - name: Build Project
         run: mvn clean install -DskipTests -pl oak-auth-ldap -am
 
