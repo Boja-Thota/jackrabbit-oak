@@ -24,9 +24,8 @@ jobs:
         with:
           distribution: 'adopt'
           java-version: '11'
-          
-      - name: Install Maven
-        run: sudo apt-get install -y maven
+          cache: maven
+        
       
       - name: Build Project
         run: mvn clean install -DskipTests -pl oak-auth-ldap -am
